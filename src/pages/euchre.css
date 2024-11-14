@@ -1,0 +1,193 @@
+.euchre-rules{
+    padding: 40px;
+    background-color: darkgreen;
+}
+
+
+.euchre-rules h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: darkred;
+}
+
+
+.euchre-rules ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+.euchre-rules ul li {
+    margin-bottom: 15px;
+    font-size: 17px;
+    color: goldenrod;
+}
+
+.euchre-guide{
+    padding: 40px;
+    background-color: black;
+}
+
+.euchre-guide h2{
+    font-size: 40px;
+    text-align: center;
+    color: darkred;
+    margin-bottom: 30px;
+}
+
+.guide-steps{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.step{
+    background-color: darkgrey;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.step h3{
+    font-size: 24px;
+    color: gold;
+}
+
+.step p{
+    font-size: 17px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.blackjack-tips h2{
+    font-size: 40px;
+    text-align: center;
+    color: darkred;
+    margin-bottom: 30px;
+}
+
+.tips-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tip{
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.tip h3{
+    font-size: 24px;
+    color: #E63946;
+}
+
+.tip p{
+    font-size: 17px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.euchre-tips {
+    padding: 40px;
+    background-color: darkgreen;
+}
+
+
+.euchre-tips h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: gold;
+}
+
+
+.euchre-tips ul{
+    list-style-type: disc;
+    padding-left: 40px;
+    color: white;
+}
+
+.euchre-tips ul li {
+    margin-bottom: 15px;
+    font-size: 17px;
+    color: white;
+}
+
+
+.euchre-tips {
+    padding: 40px;
+    background-color:darkgreen;
+}
+
+.euchre-tips h2 {
+    font-size: 40px;
+    text-align: center;
+    color: gold;
+    margin-bottom: 30px;
+}
+
+.euchre-intro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    background-color: black;
+}
+
+.euchre-intro .intro-text {
+    max-width: 50%;
+    color: white;
+}
+
+.euchre-intro h1 {
+    font-size: 48px;
+    color: goldenrod;
+}
+
+.euchre-intro p {
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+.euchre-intro .intro-image img {
+    width: 500x;
+    border-radius: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-image img {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .euchre-intro{
+        flex-direction: column;
+        text-align: center;
+    }
+
+.euchre-intro .intro-image img
+{
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.euchre-intro h1{
+    font-size: 30px;
+}
+
+.euchre-intro p{
+    font-size: 16px;
+}
+}

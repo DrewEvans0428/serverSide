@@ -1,0 +1,125 @@
+{
+    "homePage": {
+        "banner": {
+            "_id":1,
+            "title": "Cards 101",
+            "subtitle": "Let the game choose you",
+            "img_name": "images/banner_cards.jpg"
+        },
+        "games": [
+            {
+                "_id":2,
+                "title":"Blackjack",
+                "description":"Have the highest score but don't go above 21",
+                "img_name": "images/bj_project_image.jpg",
+                "link": "/blackjack",
+                "features": [
+                    "strategy",
+                    "luck",
+                    "multiplayer"
+                ]
+            },
+            {
+                "_id":3,
+                "title": "Solitaire",
+                "description":"A less stressfull and more skilled game",
+                "img_name": "images/soli_project_image.jpg",
+                "link":"/solitaire",
+                "features":[
+                    "Patience",
+                    "Solo",
+                    "Skill"
+                ]
+            },
+            {
+                "_id":4,
+                "title":"Poker",
+                "description":"A multiplayer game that is fun with friends",
+                "img_name":"images/poker_project_image.jpg",
+                "link":"/poker",
+                "features":[
+                    "Bluffing",
+                    "multiplayer",
+                    "High Stakes"
+                ]
+            },
+            {
+                "_id":5,
+                "title":"Spades",
+                "description": "A game of strategy",
+                "img_name": "images/spades_project_image.jpg",
+                "link":"/spades",
+                "features":[
+                    "Team Play",
+                    "Strategy",
+                    "Trick-taking"
+                ]
+            },
+            {
+                "_id":6,
+                "title":"Rummy",
+                "description": "A game pairs and strategy",
+                "img_name": "images/rummy.jpg",
+                "link":"/rummy",
+                "features":[
+                    "Sequences",
+                    "Matching",
+                    "Strategy"
+                ]
+                
+            },
+            {
+                "_id":7,
+                "title":"Bridge",
+                "description": "A game of teamwork",
+                "img_name": "images/bridge.jpg",
+                "link":"/bridge",
+                "features":[
+                    "Team Play",
+                    "Strategy",
+                    "Trick-taking"
+                ]
+            },
+            {
+                "_id":8,
+            "title":"Gin-Rummy",
+            "description": "A spinoff of Rummy",
+            "img_name": "images/gin_rummy.jpg",
+            "link":"/gin-rummy",
+            "features":[
+                "Quick thinking",
+                "Strategy",
+                "Rummy"
+            ]
+        },
+        {  
+            "_id":9,
+        "title":"Euchre",
+        "description": "A trick-taking game",
+        "img_name": "images/euchre.jpg",
+        "link":"/euchre",
+        "features":[
+            "Team Play",
+            "Strategy",
+            "Trump"
+        ]
+    }
+        ],
+        "about":{
+            "_id":10,
+            "title":"About Us",
+            "description": "We bring together the best card games, tutorials, and strategy tips. Whether you are new or seasoned."
+        },
+        "contact":{
+            "_id":11,
+            "title":"Contact",
+            "email": "support@cards101.com",
+            "phone": "+1-123-456-7890"
+        },
+        "footer": {
+            "_id":12,
+            "text": "Cards 101: Andrew Evans",
+            "year": "2024"
+        }
+    }
+}
