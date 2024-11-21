@@ -2,11 +2,15 @@
 const express = require('express');
 const path = require('path');
 const cors = require("cors");
+const Joi = require('joi');
+
+
 
 const app = express();
 const PORT = 3000;
 
 app.use(cors());
+app.use(express.static("public"));
 
 const cards = [
     {
@@ -103,6 +107,13 @@ const cards = [
 
 ];
 
+const cardSchema = Joi.object({
+    title: Joi.string().min(3).required(),
+    description: Joi.string().min(5).required(),
+    image: Joi.string().uri().optional(),
+    features: Joi.array().items(Joi.string()).optional(),
+});
+
 app.set("json spaces", 2);
 
 app.use(express.static("public"));
@@ -111,10 +122,20 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, "public", 'index.html'));
 });
 
-app.get("/api/events", (req, res) => {
+app.get("/api/cards", (req, res) => {
     res.json(cards);
-})
+});
 
-app.listen(PORT, () => {
-    console.log('Server is running on http://localhost:${PORT}');
+app.post("/api/addCard", (req, res) => {
+    const { error, value } = cardSchema.validate(req.body);
+    if (error) {
+        return res.status(400).json({ success: false, message: error.details[0].message });
+    }
+    const newCard = { ...value, _id: cards.length + 1};
+    cards.push(newCard);
+    res.json({ success: true, message: 'Card games added successfully!'});
+});
+
+app.listen(3000, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
 });
