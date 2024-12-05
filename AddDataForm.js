@@ -3,7 +3,7 @@ import axios from 'axios';
 
 function AddDataForm({ onDataAdded }) {
     const [formData, setFormData] = useState({ title: '', description: ''});
-    const [error, setError] = useState();
+    const [error, setError] = useState('');
     const [success, setSuccess] = useState(false);
 
     const handleInputChange = (e) => {
@@ -28,13 +28,15 @@ function AddDataForm({ onDataAdded }) {
         if (!validateForm()) return;
 
         try{
-            const response = await axios.post(formData);
+            const response = await axios.post('http://localhost:3000/api/card', formData);
             if (response.data.success) {
                 setSuccess(true);
                 onDataAdded();
                 setFormData({ title: '', description: ''});
+            } else{
+                setError(response.data.message);
             }
-        } catch (err) {
+        } catch (error) {
             setError('Failed to add data');
         }
     };
